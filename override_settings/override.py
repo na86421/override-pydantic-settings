@@ -12,7 +12,7 @@ def async_override_settings(settings, **overrides):
     def decorator(func):
         @wraps(func)
         async def wrapper(*args, **kwargs):
-            _check_value(settings, overrides)
+            check_value(settings, overrides)
 
             original = {}
             try:
@@ -38,7 +38,7 @@ def override_settings(settings, **overrides):
     After the called function is finished, the settings are rolled back.
     """
 
-    _check_value(settings, overrides)
+    check_value(settings, overrides)
 
     original = {}
     try:
@@ -53,7 +53,7 @@ def override_settings(settings, **overrides):
             setattr(settings, key, value)
 
 
-def _check_value(settings, overrides):
+def check_value(settings, overrides):
     if not isinstance(settings, BaseSettings):
         raise ValueError("settings must be of type pydantic.BaseSettings.")
 

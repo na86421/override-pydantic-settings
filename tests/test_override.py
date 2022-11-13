@@ -1,7 +1,7 @@
 import pytest
 from pydantic import BaseSettings
 
-from override_settings import async_override_settings, override_settings
+from override_settings import async_override_settings, override_settings, check_value
 
 
 class MySettings(BaseSettings):
@@ -35,3 +35,10 @@ def test_rolled_back_settings():
     assert settings.ENV == "dev"
     assert settings.NAME == "Junki"
     assert settings.EMAIL == "na66421@gmail.com"
+
+
+def test_check_value():
+    with pytest.raises(ValueError):
+        check_value(settings=dict(), overrides=dict())
+    with pytest.raises(ValueError):
+        check_value(settings=settings, overrides="fake dict")
