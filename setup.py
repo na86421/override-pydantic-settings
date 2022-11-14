@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="override-pydantic-settings",  # Replace with your own username
-    version="1.0.0",
+    version="1.0.1",
     author="Junki Yoon",
     author_email="na66421@gmai.com",
     description="Override pydantic settings",
