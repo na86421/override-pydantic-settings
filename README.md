@@ -30,7 +30,7 @@ This causes a lot of code duplication. So, in order to remove the code that occu
 Features
 ========
 
-You can easily override the setting value by simply applying a decorator to the test function.  
+You can easily override the setting value by applying a decorator to the test function.  
 Also, when the test function is finished, the settings are automatically rolled back.
 
 That's all.
