@@ -48,7 +48,7 @@ pip install override-pydantic-settings
 ```
 
 How to use
------
+==========
 ### For sync tests
 ```py
 from pydantic import BaseSettings
