@@ -31,7 +31,7 @@ Features
 ========
 
 You can easily override the setting value by applying a decorator to the test function.  
-Also, when the test function is finished, the settings are automatically rolled back.
+Also, when the test function is finished, the settings are automatically roll back.
 
 That's all.
 ```py

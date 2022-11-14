@@ -6,7 +6,7 @@ from pydantic import BaseSettings
 def async_override_settings(settings, **overrides):
     """
     Override settings for Async function.
-    After the called function is finished, the settings are rolled back.
+    After the called function is finished, the settings are roll back.
     """
 
     def decorator(func):
@@ -35,7 +35,7 @@ def async_override_settings(settings, **overrides):
 def override_settings(settings, **overrides):
     """
     Override settings for Sync function.
-    After the called function is finished, the settings are rolled back.
+    After the called function is finished, the settings are roll back.
     """
 
     check_value(settings, overrides)
