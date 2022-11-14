@@ -1,8 +1,6 @@
 Overrdie Pydantic Settings
 ====================
-<img src="https://img.shields.io/badge/python-%3E%3D%203.6-blue"/>
-<img src="https://img.shields.io/badge/-pydantic%20-%23E00050"/>
-<img src="https://img.shields.io/badge/-pytest%20-%231083CC"/>  
+<img src="https://img.shields.io/badge/python-%3E%3D%203.6-blue"/> <img src="https://img.shields.io/badge/-pydantic%20-%23E00050"/> <img src="https://img.shields.io/badge/-pytest%20-%231083CC"/>  
 
 Settings management in Pydantic makes it easy to override settings, like below.
 ```py
@@ -10,7 +8,7 @@ Settings management in Pydantic makes it easy to override settings, like below.
 settgins.env = "production"
 ```  
 However, if you want to change the setting value in each test suite in your test code,  
-you need to change the values at the beginning of the test and roll back the values at the end of the test.
+You need to change the values at the beginning of the test and roll back the values at the end of the test.
 
 ```py
 from app.core.config import settings # Pydantic settings
