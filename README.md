@@ -5,7 +5,7 @@ Overrdie Pydantic Settings
 Settings management in Pydantic makes it easy to override settings, like below.
 ```py
 # override settings
-settgins.env = "production"
+settings.env = "production"
 ```  
 However, if you want to change the setting value in each test suite in your test code,  
 You need to change the values at the beginning of the test and roll back the values at the end of the test.
@@ -84,7 +84,7 @@ Development
 Compatible with `Python >= 3.6` 
 
 `Python >= 3.10`, we can create async decorators using the
-[asnyc context manager](https://docs.python.org/dev/library/contextlib.html#contextlib.asynccontextmanager).  
+[async context manager](https://docs.python.org/dev/library/contextlib.html#contextlib.asynccontextmanager).  
 It seems that `async & sync` can be integrated into one function.  
 
 
